@@ -117,8 +117,8 @@ function fluxReconstruction(w::Array{Float64,2}, U::Array{Float64,1}, FF::Array{
 
     # specifying the boundary conditions using internal extrapolation from the calculated flux of the
     # neighbouring cell centers
-    #fL[1,:] = [F[1,1]; F[1,2]]
-    fL[1,:] = [0; 0]
+    fL[1,:] = [F[1,1]; F[1,2]]
+    #fL[1,:] = [0; 0]
     fR[end,:] = [F[end,1]; F[end,2]]
 
 
