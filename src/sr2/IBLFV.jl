@@ -36,10 +36,10 @@ function FVMIBL(w::Array{Float64,2}, U::Array{Float64,1}, Ut::Array{Float64,1}, 
 
     z = RHSSource(U,B, del,Ut, Ux, FF, E, S)
 
-    dtL = calc_Dt(UipL, dfdeipL, FFipL, wipL, 0.8, dx)
-    dtR = calc_Dt(UipR, dfdeipR, FFipR, wipR, 0.8, dx)
+    #dtL = calc_Dt(UipL, dfdeipL, FFipL, wipL, 0.8, dx)
+    #dtR = calc_Dt(UipR, dfdeipR, FFipR, wipR, 0.8, dx)
 
-    dt = max(dtL,dtR)
+    #dt = max(dtL,dtR)
 
     j1, j2 = sepeartionJ(lamb1, lamb2, dt, dx)
 
